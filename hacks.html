@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spidey Toolkit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow-y: auto;
+            /* changed from hidden */
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        html {
+            overflow-y: auto;
+            /* ensure scrolling is allowed */
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #00ffe7;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 50px #00ffe7;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #00ffe7;
+            font-size: 32px;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #00ffe7;
+            background: transparent;
+            color: #00ffe7;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: #00ffe7;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffe7;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1>💻 Spidey </h1>
+        <div class="subtitle">Welcome to the Spidey Mobile And Apps Hacks Toolkit</div>
+
+
+
+
+
+
+        <a href="https://www.mediafire.com/file/9mmxeb4elxvek5q/Mobile_Hack.7z/file" class="btn">📱 Mobile Hack</a>
+        <a href="https://www.mediafire.com/file/tzsvwkgfqknutcg/Whatsapp_Hack.7z/file" class="btn">💬 WhatsApp Hack</a>
+        <a href="https://www.mediafire.com/file/rsi4amf9pobui6f/Facebook_Hack.7z/file" class="btn">📘 Facebook Hack</a>
+        <a href="https://www.mediafire.com/file/cdb3siibhivex8c/Instagram_Hack.7z/file" class="btn">📸 Instagram Hack</a>
+        <a href="https://www.mediafire.com/file/ppezg901kv3yq0v/TikTok_Hack.7z/file" class="btn">🎵 TikTok Hack</a>
+        <a href="https://www.mediafire.com/file/i9rb75gcz23a824/Telegram_Hack.7z/file" class="btn">✈️ Telegram Hack</a>
+        <a href="https://www.mediafire.com/file/lp2rmu4l1cpwglv/Gallery_Hack.7z/file" class="btn">🖼️ Gallery Hack</a>
+        <a href="https://www.mediafire.com/file/pobbgvu1w5ip088/PUBG_Mobile_Hack.7z/file" class="btn">🎮 PUBG Game Hack</a>
+        <a href="https://www.mediafire.com/file/67wafqmb05fpjsi/Free_Fire_Hack.7z/file" class="btn">🔥 Free Fire Hack</a>
+
+        <a href="https://www.mediafire.com/file/4kejmligd7ain83/Telegram+Unban+Pro.apk/file" class="btn">🔓 Telegram Unban</a>
+        <a href="https://www.mediafire.com/file/9jgmo5ivcuykkqy/AimKing-Main02_3.1.5.apk/file" class="btn">🎱 8 Ball Pool Pro</a>
+        <a href="https://www.mediafire.com/file/k964ob27phinzok/deeplinks_categorized.txt/file" class="btn">🔗 Deep Links</a>
+        <a href="https://www.mediafire.com/file/rvirmsr0qak96o2/tiktok_100likes_daily.zip/file" class="btn">💯 TikTok Daily 100 Likes</a>
+        <a href="https://www.mediafire.com/file/vq882ssgx8c3oao/Youtube_Ads_Remove_By_AbheeBhai_Mods.zip/file" class="btn">🚫 YouTube Ad Remover</a>
+
+        <a href="https://drive.google.com/drive/folders/1jGF3vLJqbcAOTaXY9qdQwcU4ggOEb-q-" class="btn">📞 Poland Number Method</a>
+        <a href="https://drive.google.com/file/d/1G3SDtSVbytmAwWtyXG5zfeQ_W6sOEr_U/view?usp=drivesdk" class="btn">📲 USA Number Method</a>
+        <a href="https://drive.google.com/drive/folders/1hgmuprQz-UrP0GOJcLEEqbc8-NOwyja5" class="btn">🎨 Canva Free Method</a>
+        <a href="https://drive.google.com/drive/folders/1K23DwzbZXjsFSmcf7DIOxvXj7GRdexVD" class="btn">👻 WhatsApp Incognito Mode</a>
+        <a href="https://drive.google.com/drive/folders/1-h_2A5-zT8Cm5FQE4oBl1SDmzUEisyfW" class="btn">🖥️ Free RDP Method</a>
+
+        <a href="https://drive.google.com/drive/folders/112Tbe51T_ktKCeE2LKFhitSBzcOw4iyK" class="btn">🔄 Migrate WordPress</a>
+        <a href="https://drive.google.com/drive/folders/14qNcPeoeiIJurNHpfeX0Ai1EF5yXLkc5" class="btn">🗣️ AI Human Voice</a>
+        <a href="https://drive.google.com/drive/folders/15hry3o-BY2VM0Z5I9pJhK6DEmCTrbcWj" class="btn">💸 Adsense Approval Tips</a>
+        <a href="https://drive.google.com/drive/folders/1pY9aP8NktHGgBheRdvW5n7aCrOn_gLnU" class="btn">🌐 Proxy Setup Method</a>
+        <a href="https://drive.google.com/drive/folders/11Zx1rfq6NFybSVOfbitWaFUdfImxz3jk" class="btn">📢 UGC Ads Making</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit - Powered by Nain 🔥
+        </div>
+    </div>
+
+    <!-- Background Animation Script -->
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ffe7";
+            ctx.font = $ {
+                fontSize
+            }
+            px monospace;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>

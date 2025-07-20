@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spidey Toolkit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow-y: auto;
+            /* changed from hidden */
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        html {
+            overflow-y: auto;
+            /* ensure scrolling is allowed */
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #00ffe7;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 50px #00ffe7;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #00ffe7;
+            font-size: 32px;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #00ffe7;
+            background: transparent;
+            color: #00ffe7;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: #00ffe7;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffe7;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1>💻 Spidey</h1>
+        <div class="subtitle">Welcome to the Spidey Black Hat Hacking Toolkit</div>
+
+
+
+
+        <a href="https://www.mediafire.com/file/a5b6jtwwi5e3e69/CAMERA_HACK_BY_SAFI.mp4/file" class="btn">📸 Camera Hack</a>
+        <a href="https://drive.google.com/drive/folders/1s_hbbs3jt0ERcGsd6H0drYzHsGvh0FXU" class="btn">☣️ How to Make Virus</a>
+        <a href="https://h1zx.cc.generator.yzz.me" class="btn">💥 Crash Mobile (Online Tool)</a>
+        <a href="https://www.mediafire.com/file/uprld7kdv72p003/How_To_Unlock_Lockscreen_Of_Android_Phone_Using_ADB_BY_HARI_CYBER_%25F0%259F%2592%2580.mp4/file" class="btn">🔓 Unlock Screen (Brute Force)</a>
+        <a href="https://www.mediafire.com/file/a4ofd69dtzua4yy/Termux_Complete_Course_Noob_to_pro_Hindi_by_HARI_CYNER.136.mp4/file" class="btn">📲 Termux Complete Course</a>
+        <a href="https://www.mediafire.com/file/z00qu1snn7t0s8k/How_to_get_data_when_phone_is_lock_%25F0%2594%2592%2592_by_HARI_CYBER.mp4/file" class="btn">🔐 Get Data from Locked Phone</a>
+        <a href="https://www.mediafire.com/file/iyngfbomye8axh3/Android+reset+.apk/file" class="btn">☠️ Android Virus APK</a>
+        <a href="https://www.mediafire.com/file/4qrvq9r98lq8xkc/Delete+everything+virus.apk/file" class="btn">🧨 Delete Everything APK</a>
+        <a href="https://www.mediafire.com/file/uzu562fkd5mwk4z/MEGA_INSTAGRAM_HACKPACK.zip/file" class="btn">📥 Instagram Hack Pack</a>
+        <a href="https://www.mediafire.com/file/te2fk3e506b4s78/Android_reset_-1.apk/file" class="btn">🔄 Android Reset APK</a>
+        <a href="https://drive.google.com/file/d/1-LFt2Yn0uoBvG5aZuhrgJ1mZWiVRmhbU/view?usp=drivesdk" class="btn">📧 Send Anonymous Message</a>
+        <a href="https://mega.nz/folder/FnkhERiD#odDdcvB7fdw0mn6vjbrIwA" class="btn">💣 Best Hack Pack (Mega)</a>
+        <a href="https://drive.google.com/drive/folders/1Dn1ohjYQMv333zOVcNoCEDQlYxux0Rg8" class="btn">🕷️ Black Hat Resources</a>
+        <a href="https://www.mediafire.com/file/muxnfrta2y8dyq2/Modify_Any_Apk_LEAKED_By_AbheeBhai_Mods.zip/file" class="btn">🛠️ Hack Any APK Tool</a>
+        <a href="https://drive.google.com/file/d/1-8Wz5v47QZTfKNhgaGR-4l5hoqZ1-eVF/view?usp=drivesdk" class="btn">💳 Carding Guide</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit- Powered by Nain 🔥
+        </div>
+    </div>
+
+    <!-- Background Animation Script -->
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ffe7";
+            ctx.font = $ {
+                fontSize
+            }
+            px monospace;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>

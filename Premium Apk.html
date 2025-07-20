@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spidey Toolkit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow-y: auto;
+            /* changed from hidden */
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        html {
+            overflow-y: auto;
+            /* ensure scrolling is allowed */
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #00ffe7;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 50px #00ffe7;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #00ffe7;
+            font-size: 32px;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #00ffe7;
+            background: transparent;
+            color: #00ffe7;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: #00ffe7;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffe7;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1>💻 Spidey</h1>
+        <div class="subtitle">Welcome to the Spidey Premium And Mod Apks Toolkit</div>
+
+
+
+
+
+
+
+        <a href="https://drive.google.com/file/d/19gZ_XoUhLhsoPiV3mY1RMFGsCj4dyplK/view?usp=drivesdk" class="btn">▶️ YouTube Premium</a>
+        <a href="https://t.me/weareunlimitedtech/175" class="btn">🎵 Spotify Premium</a>
+        <a href="https://t.me/weareunlimitedtech/176" class="btn">🎨 Canva APK</a>
+        <a href="https://t.me/weareunlimitedtech/194" class="btn">💥 Turbo SMS Bomber</a>
+        <a href="https://t.me/weareunlimitedtech/231" class="btn">🎬 Capcut Premium</a>
+        <a href="https://t.me/weareunlimitedtech/232" class="btn">🌐 Touch VPN</a>
+        <a href="https://t.me/weareunlimitedtech/233" class="btn">📺 YouTube Pro</a>
+        <a href="https://t.me/weareunlimitedtech/234" class="btn">📥 SnapTube Premium</a>
+        <a href="https://t.me/weareunlimitedtech/235" class="btn">🎧 Boomplay Premium</a>
+        <a href="https://drive.google.com/drive/folders/1BB85Oef3nauoiVDr1JKEkvqAjPkA2rKk" class="btn">📸 Picsart & InShot</a>
+        <a href="https://www.mediafire.com/file/gt2c2lgiv5kyupe/Picsart_23.2.apk/file" class="btn">🎨 Picsart Pro APK</a>
+        <a href="https://www.mediafire.com/file/4lknqb48m8ncg3b/Shazam_14.30.0-240613.apk/file" class="btn">🎵 Shazam Pro APK</a>
+        <a href="https://www.mediafire.com/file/11t1e4c6zd1kfwi/Spotify_8.9.18.512.apk/file" class="btn">🎧 Spotify APK</a>
+        <a href="https://www.mediafire.com/file/3dkqm3t565c6syc/TeraBox_3.27.1.apk/file" class="btn">💾 TeraBox APK</a>
+        <a href="https://www.mediafire.com/file/161fd1u11c5jr9u/Termux_0.118.0.apk/file" class="btn">🔧 Termux APK</a>
+        <a href="https://www.mediafire.com/file/k26z0djqt7nk3oa/Termux_Tools_9.9.apk/file" class="btn">🛠️ Termux Tools</a>
+        <a href="https://www.mediafire.com/file/ooj0vy31zgfj3x2/Secure_VPN_VIP_v4.2.6_202405220_.apk/file" class="btn">🔐 Secure VPN</a>
+        <a href="https://www.mediafire.com/file/c09l7pxfjg5b8fz/AutoResponder_for_WA_3.8.0.apk/file" class="btn">🤖 AutoResponder WA</a>
+        <a href="https://www.mediafire.com/file/4qebrky91t8vd26/DualSpace_4.2.8.apk/file" class="btn">🔀 Dual Space</a>
+        <a href="https://www.mediafire.com/file/oqjk3ncxy7egpk7/CapCut_8.9.0.apk/file" class="btn">✂️ CapCut APK</a>
+        <a href="https://www.mediafire.com/file/t6c3zyzds9pqxvs/Call_Recorder_1.1.322.apk/file" class="btn">📞 Call Recorder</a>
+        <a href="https://www.mediafire.com/file/g7e1c0cjnp7aq4a/Netflix_.apk/file" class="btn">🎥 Netflix Alternative</a>
+        <a href="https://www.mediafire.com/file/dmo1ysfapi5a4uv/KineMaster_7.5.3.33840.Pola.apk/file" class="btn">🎬 KineMaster Pro</a>
+        <a href="https://www.mediafire.com/file/hseiqe1dufgsih0/capcut_latest_.apk/file" class="btn">✂️ CapCut Pro APK</a>
+        <a href="https://www.mediafire.com/file/y8zw457s99r7hj5/GTA%20VC%20v1.72.42919648%20-%20 espacioapk.com.apk/file" class="btn">🚘 GTA Vice City</a>
+        <a href="https://www.mediafire.com/file/qli427c3c4105hk/GTA%20SA%202.10%20-%20espacioapk. com.zip/file" class="btn">🚗 GTA San Andreas</a>
+        <a href="https://www.mediafire.com/file/p2zxvsjtq4ufcgi/GTA%20SA%20The%20Definitive%20Editi" class="btn">🚙 GTA SA Definitive</a>
+        <a href="https://www.mediafire.com/file/vq882ssgx8c3oao/Youtube_Ads_Remove_By_AbheeBhai_Mods.zip/file" class="btn">🚫 YouTube Ad Remover</a>
+        <a href="https://liteapks.com/alight-motion.html" class="btn">🎞️ Alight Motion Pro</a>
+        <a href="https://liteapks.com/inshot-pro-2.html" class="btn">🎥 InShot Pro</a>
+        <a href="https://liteapks.com/kinemaster-app.html" class="btn">🎬 KineMaster Pro</a>
+        <a href="https://liteapks.com/camscanner.html" class="btn">📑 CamScanner</a>
+        <a href="https://liteapks.com/wps-office.html" class="btn">📄 WPS Office</a>
+        <a href="https://liteapks.com/duolingo.html" class="btn">🦉 Duolingo</a>
+        <a href="https://liteapks.com/aloha-browser.html" class="btn">🌐 Aloha Browser</a>
+        <a href="https://liteapks.com/spotify-2.html" class="btn">🎧 Spotify Premium (Mod)</a>
+        <a href="https://liteapks.com/shazam.html" class="btn">🎶 Shazam</a>
+        <a href="https://liteapks.com/mint-business-stock-market.html" class="btn">💹 Mint News</a>
+        <a href="https://liteapks.com/bettersleep-sleep-tracker.html" class="btn">😴 BetterSleep</a>
+        <a href="https://liteapks.com/sleep-monitor-sleep-tracker.html" class="btn">🛏️ Sleep Monitor</a>
+        <a href="https://liteapks.com/forest.html" class="btn">🌳 Forest: Stay Focused</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit- Powered by Nain 🔥
+        </div>
+    </div>
+
+    <!-- Background Animation Script -->
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ffe7";
+            ctx.font = $ {
+                fontSize
+            }
+            px monospace;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spidey Toolkit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow-y: auto;
+            /* changed from hidden */
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        html {
+            overflow-y: auto;
+            /* ensure scrolling is allowed */
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #00ffe7;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 50px #00ffe7;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #00ffe7;
+            font-size: 32px;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #00ffe7;
+            background: transparent;
+            color: #00ffe7;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: #00ffe7;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffe7;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1>💻 Spidey</h1>
+        <div class="subtitle">Welcome to the Spidey All In One Toolkit</div>
+
+
+
+
+        <a href="https://drive.google.com/drive/folders/170nYuE-tnWeSmiigHisRioVhtxjkWGCX" class="btn">🎬 All Reels</a>
+        <a href="https://drive.google.com/drive/folders/1OnQPrnK8Z3e81GdoogsvT8dgBTUoWFxD" class="btn">🎵 Copyright Free Music</a>
+        <a href="https://mega.nz/file/wrsFTR6S#HEpoELgEqL331qnNl9unhckZtrofTjATCEtLa2sKkCc" class="btn">🎨 Editing Pack</a>
+        <a href="https://drive.google.com/file/d/10sJ5rEUE6lCK1ttdR-GpyO8PqZp6uA2S/view?usp=drivesdk" class="btn">💡 100 Quotes</a>
+        <a href="https://drive.google.com/drive/folders/1Bmn6LWj75C1bfMNGh8pymh5deoIbh-V2?usp=sharing" class="btn">🤖 AI Motivational Reels</a>
+        <a href="https://drive.google.com/drive/folders/1TAL7Y4vxUTLbSAVkhMN-rDxMqltc-_lB" class="btn">📚 100 Best Books</a>
+        <a href="https://drive.google.com/file/d/1zZ4GVTQN1kqtGYWR6P1Xvew1aZEwCrjc/view?usp=sharing" class="btn">📱 100+ Premium APKs</a>
+        <a href="https://drive.google.com/file/d/10O2Pw_hKguc_bQAk9piEoZnEHEu037C3/view?usp=drivesdk" class="btn">💻 80+ Digital Marketing Courses</a>
+        <a href="https://drive.google.com/drive/folders/1HVgreO1VIO6jxU6sXqI9iMp1wwIjryf_?usp=sharing" class="btn">🎓 Unlimited Premium Courses</a>
+        <a href="https://www.mediafire.com/file/6mnmgh5puy503zl/app-release%25282%2529.apk/file" class="btn">🧰 All-in-One Toolkit (APK)</a>
+        <a href="https://drive.google.com/drive/folders/175NPBn-X6KkBp92NXTRMT1XnvMCr5gSV?usp=sharing" class="btn">💾 500TB Data</a>
+        <a href="https://drive.google.com/drive/folders/1JkDBqy9c7TVCBjq5ua7JrOsazN4heBJ6?usp=sharing" class="btn">🛠️ All Adobe Software</a>
+        <a href="https://drive.google.com/file/d/1B77u4TWLiAhkr4_ZgXbFiEt6PEyTurBq/view?usp=sharing" class="btn">🎞️ Editing Bundle</a>
+        <a href="https://drive.google.com/drive/u/0/folders/15IS504P-eTXYkw-aUcHafdfsL3b8o32n" class="btn">🛠️ Additional Editing Pack</a>
+        <a href="https://drive.google.com/drive/folders/1rx_qNSwL7DMhe_fOhoG4dEVPYor7IsdD" class="btn">🖥️ 3000+ WordPress Themes</a>
+        <a href="https://drive.google.com/file/d/1SETjmBYk39_AGt7JNf1-yjQU-zand-F8/view?usp=sharing" class="btn">💾 10TB Data</a>
+        <a href="https://www.mediafire.com/file/zqwe4hq4ugvqn0c/POLA_Hacking_courses.apk/file" class="btn">💻 All Hacking Courses (APK)</a>
+        <a href="https://drive.google.com/drive/folders/1J4oUK8sizu-5T680voKMKgxTsqOBaGiJ" class="btn">🔐 100GB Data</a>
+        <a href="https://drive.google.com/drive/folders/1a-tdJWBqMRIT7A7xxKjTlZpZ7OasyIGi" class="btn">📜 140+ Coding Certificates</a>
+        <a href="https://drive.google.com/drive/folders/1pGnG7ErICSJ4A4agulOw-b4DuuxkGFR0?usp=sharing" class="btn">🖼️ Thumbnail Pack</a>
+        <a href="https://drive.google.com/drive/folders/1ZlXSVj0ok6bqSuFizc0SfvxRAOT0mPFk" class="btn">🔤 100 Font Styles</a>
+        <a href="https://drive.google.com/drive/mobile/folders/1bOOYEJaNYOzddHQHoKI4tnzKks3BaL-z" class="btn">📈 Marketing Courses</a>
+        <a href="https://drive.google.com/drive/folders/12lMrkhYxGfXAqlXtH38mMZ11a1jrOdJj?usp=sharing" class="btn">🎓 800 Premium Courses</a>
+        <a href="https://drive.google.com/drive/folders/1ezDZ3uDplBOjbuBGw1qxzzD64tiXhtDt?usp=sharing" class="btn">💼 Freelancing Courses</a>
+        <a href="https://mega.nz/folder/SYYHjDTR#kXVod-hljIa2dK1jmmI7bQ" class="btn">📂 300K Post Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1FfGsTrJrr8UtwfANbC0DIdAactQmIrHf" class="btn">📚 100 Trading Books</a>
+
+        <a href="https://drive.google.com/drive/folders/1cQ9mLPW86lAnMzjnGKCPUnfOEJdSvzbg" class="btn">📊 100K+ Excel Templates</a>
+        <a href="https://drive.google.com/drive/folders/15L9f9gdgqjZYi6TgUwfUdFKEVE_m4az9" class="btn">📚 400 Courses</a>
+        <a href="https://drive.google.com/drive/folders/1vM2G9qg-JMWZFjDChotGnlKWVU03lRof" class="btn">👕 T-Shirt Design Pack</a>
+        <a href="https://drive.google.com/drive/folders/1eyFQivIsuL4RtwkvrA_1Y2caFuKTWd_M" class="btn">🎥 Motion Background Pack</a>
+        <a href="https://drive.google.com/drive/folders/1FfGsTrJrr8UtwfANbC0DIdAactQmIrHf" class="btn">📖 1000+ Books</a>
+        <a href="https://drive.google.com/drive/folders/1-reB9ewSJsUTvvM1CaAhasqLzNEHK3yR" class="btn">🖼️ Thumbnail Assets</a>
+        <a href="https://drive.google.com/drive/folders/17VYmGt293EfBs5_fCLdB05rtegdpl8Gz" class="btn">🔡 100 Font Styles</a>
+        <a href="https://drive.google.com/drive/folders/1kq0d4s8dTNKanTQZC2rKP0nC_S8vNPz7" class="btn">🎭 Cartoon Reel Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1hKqYHbhsBz1V5aTFnOPSHnxoUS768poX" class="btn">🎬 Best Editing Pack</a>
+        <a href="https://drive.google.com/file/d/1StSsJxRoc6lvn-mN9DM2m90Dma1iegoU/view?usp=sharing" class="btn">🗂️ All-In-One Bundle</a>
+        <a href="https://drive.google.com/file/d/1WzFqBl7y6iRWyh9W0wkybj6lcQ9SPp98/view?usp=drivesdk" class="btn">📦 15M+ Digital Products</a>
+        <a href="https://drive.google.com/drive/folders/1UkDXews-Vb4IRhv4WO3iHlcVqJM-1jWA" class="btn">🤖 500+ AI Reels</a>
+
+        <a href="https://drive.google.com/drive/folders/12mzi6MJLeZFC3Ts5E4muqaMERiWYgKg8" class="btn">🏋️ Gym Reels</a>
+        <a href="https://drive.google.com/drive/folders/1uIBaZVMOFch4m3dvCnfZFANUThlSpSu6?usp=sharing" class="btn">🤖 Best Editing Bots</a>
+        <a href="https://drive.google.com/file/d/1NvMXdY3dySSPHjqK1fYA2dLNvLcvbXWh/view?usp=drivesdk" class="btn">🔥 5000+ Viral Reels</a>
+        <a href="https://drive.google.com/drive/folders/1w1s7dyddloz8u2ASvbxYvXhGHnbxXKhJ" class="btn">📂 All Editing Assets</a>
+        <a href="https://drive.google.com/drive/folders/1H2GDJWnJU24TduUqkS2DZAeS_qi6OjDO?usp=sharing" class="btn">💻 All Programming Languages</a>
+        <a href="https://drive.google.com/drive/folders/1A3N2oHrfm5LgHgBbNbTm2wMhSLbxHseL?usp=sharing" class="btn">🎒 6TB+ Courses</a>
+        <a href="https://mega.nz/folder/pSQl1J5A#2zY_NT4gaLmLac4ViIcssQ/file/4TRFWKYR" class="btn">💽 286GB Data</a>
+        <a href="https://drive.google.com/drive/folders/1LOGK8KgsknDrKsLTsHiFiviFTvr3dMdi?usp=drive_link" class="btn">🛒 150 Shopify Themes</a>
+        <a href="https://drive.google.com/file/d/1sYsvk5YpyKnMvMH2Z40-AgWk2j_6bvp_/view?usp=sharing" class="btn">🎨 700GB Graphics Collection</a>
+        <a href="https://drive.google.com/drive/folders/1-_12nLWphKQBDFlZrHZXma_1SHxntIST?usp=sharing" class="btn">💡 15,000+ ChatGPT Prompts</a>
+        <a href="https://drive.google.com/drive/folders/1WnpqgOXGoNuzqYElb4NE-np6phIo8aot?usp=sharing" class="btn">📖 Best Hacking Books</a>
+        <a href="https://drive.google.com/drive/folders/1iDXRiaLHaR1h1Y3bq4Mfgz9eJr9Rs06j" class="btn">💾 Massive Digital Bundle</a>
+        <a href="https://drive.google.com/drive/folders/1CgN7DE3pNRNh_4BA_zrrMLqWz6KquwuD" class="btn">🎓 All Courses</a>
+        <a href="https://drive.google.com/drive/folders/1SQeyyTDZ89UBe414DbxmXEY8drnf32bJ?usp=sharing" class="btn">🛡️ 350GB Hacking Data</a>
+        <a href="https://drive.google.com/drive/folders/1ZoIUhoaTPr3iAM2UW6DAVlfA8XnhDg08" class="btn">📄 1000+ Landing Pages</a>
+        <a href="https://drive.google.com/drive/folders/1CYYp_XVm3icuflpwMu6q01txRZdjPlL1" class="btn">🖥️ 350+ WordPress Themes</a>
+        <a href="https://drive.google.com/drive/folders/1bxAEPNv-47YazcxYVM7NtOJAW21rXyFB" class="btn">📱 Instagram Story Graphics</a>
+        <a href="https://drive.google.com/drive/folders/1VvtMiC8DBCqRPGNGR0gy0hAcLca4LrkS?usp=sharing" class="btn">💬 150,000 ChatGPT Prompts</a>
+        <a href="https://drive.google.com/drive/folders/1aHMyOyTdkC-JEBQAGjCAt76foZhqNVIV" class="btn">🏋️ Kinobody Courses</a>
+        <a href="https://drive.google.com/drive/folders/1DSMLqwmwERNsaA5bSzamjaIjsXnLQRaq" class="btn">🛍️ Shopify Themes</a>
+        <a href="https://drive.google.com/drive/folders/1tD3e8UUBNw4BZZ3Su70bcf7t5av0Xdwl?usp=sharing" class="btn">🛍️ 260+ Shopify Themes</a>
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit- Powered by Nain 🔥
+        </div>
+    </div>
+
+    <!-- Background Animation Script -->
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ffe7";
+            ctx.font = $ {
+                fontSize
+            }
+            px monospace;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>

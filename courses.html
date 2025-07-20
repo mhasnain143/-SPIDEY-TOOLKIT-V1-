@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spidey Toolkit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow-y: auto;
+            /* changed from hidden */
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        html {
+            overflow-y: auto;
+            /* ensure scrolling is allowed */
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #00ffe7;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 50px #00ffe7;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #00ffe7;
+            font-size: 32px;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #00ffe7;
+            background: transparent;
+            color: #00ffe7;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: #00ffe7;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffe7;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1>💻 Spidey </h1>
+        <div class="subtitle">Welcome to the Spidey Learning And Skills Toolkit</div>
+
+
+
+
+        <a href="https://www.mediafire.com/file/7p9dikglpbv2ekp/Python_notes_by_POLA.pdf/file" class="btn">🐍 Python Notes</a>
+        <a href="https://drive.google.com/drive/folders/1iAa7PaBXKOIy129v6Y1_1U9__2M95-l9?usp=sharing" class="btn">💱 Forex Trading</a>
+        <a href="https://mega.nz/folder/5VoAWaRb#NV2ssx9Nl7Or6DUEyZqK7g" class="btn">🇩🇪 German Language</a>
+        <a href="https://drive.google.com/drive/folders/1d5BcSR2l-cpSjtG4hYEajXaWX7r35BNn?usp=sharing" class="btn">🎬 Video Editing</a>
+        <a href="https://drive.google.com/drive/folders/1sJ0NXMHblGdDL3nP5VlNL7F_9IX-2gMq?usp=sharing" class="btn">📊 Elite Trading</a>
+        <a href="https://drive.google.com/drive/folders/1_660IYb_SYQ2REvqh2gJ5octMnd_s5rN" class="btn">📝 Content Creation</a>
+        <a href="https://drive.google.com/drive/folders/1nCM6uRkmnr0mgNOGmW9pOM7vp6iZfWPa" class="btn">📈 Digital Marketing</a>
+        <a href="https://drive.google.com/drive/folders/1M-F3aFG_bmWF0HJWPapArSMIPZxthU6d" class="btn">🧠 Personal Development</a>
+        <a href="https://drive.google.com/drive/folders/1FJ7xUBkbGa2sYlM2cn1BieY7vYCQCkGp" class="btn">🎙️ Professional Voice Over</a>
+        <a href="https://drive.google.com/drive/folders/1QGl73u8-RGqccr1jqijFN8uouk_h19At" class="btn">🛍️ Digital Product Selling</a>
+        <a href="https://drive.google.com/drive/folders/1ooqS9k3vIemVsp-knYPr_WKlVP9q-h8N" class="btn">✍️ Content Creation 2</a>
+        <a href="https://drive.google.com/drive/folders/1RMDJkELLM86qMmvrfUUeDP8pvfDRW_Sq" class="btn">💡 GBOB Resources</a>
+        <a href="https://drive.google.com/drive/folders/16vl-WN-9QoGKLi_UsXyUDy-SWAYzZJHq" class="btn">🎞️ Adobe Animation</a>
+        <a href="https://drive.google.com/drive/folders/1TQQRTW_ZtF6gOjI-WiyGgLrtfXWk0FF6" class="btn">📉 Stock Market</a>
+        <a href="https://drive.google.com/drive/folders/1Awfj5z9go3HOX-upfImnDOrW6_7iQJLh" class="btn">🎨 Edit Like Pro</a>
+        <a href="https://drive.google.com/drive/folders/1BoXpCO2OcnBfIL42vbqaupMAoK7Xue9v" class="btn">📚 Book Selling</a>
+        <a href="https://drive.google.com/drive/folders/1AcUe4gh0bmxbqzlyTJzOj0LJAIN9Y4iq" class="btn">💼 Build Fiverr Agency</a>
+        <a href="https://drive.google.com/drive/folders/1xICarprcfM4CkFR-veb23lCd6rnhV0Xs" class="btn">📊 Hadoop Fundamentals</a>
+        <a href="https://drive.google.com/drive/folders/1q2sOBNU4lPBkwtF1Msl6uCACBV5TUGWD" class="btn">🛡️ Cybersecurity</a>
+        <a href="https://drive.google.com/folderview?id=12rfOJrpUj9vt9HYg66djxYDads4HmGDB" class="btn">🤖 Machine Learning (Apps)</a>
+        <a href="https://drive.google.com/folderview?id=1Tk_-NOXDJ2xuKefQ-r0TiwSvYz0ejKgd" class="btn">⚛️ Advanced React & Redux</a>
+        <a href="https://drive.google.com/folderview?id=1-HJRjs2jM-dS9toH46dic4h7Gwnlk_hS" class="btn">🌐 Web Developer Nanodegree</a>
+        <a href="https://drive.google.com/folderview?id=1770Z6Rw8tSq2iXjS2X_MoJwUd6EuZxCq" class="btn">👁️ Computer Vision Nanodegree</a>
+        <a href="https://drive.google.com/folderview?id=1soqPKlzEak7BvAK0LTwMm-PdvbhQ6pX5" class="btn">🎵 Pro Music Production</a>
+        <a href="https://drive.google.com/folderview?id=1KKKlL5TzdXDIxrSOz0Gmz3RWGTh_0Xli" class="btn">💾 Assembly Language</a>
+        <a href="https://drive.google.com/folderview?id=1714TBeP8c" class="btn">🐧 Kali Linux From Scratch</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit - Powered by Nain 🔥
+        </div>
+    </div>
+
+    <!-- Background Animation Script -->
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ffe7";
+            ctx.font = $ {
+                fontSize
+            }
+            px monospace;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>

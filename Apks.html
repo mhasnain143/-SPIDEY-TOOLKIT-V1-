@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spidey Toolkit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow-y: auto;
+            /* changed from hidden */
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        html {
+            overflow-y: auto;
+            /* ensure scrolling is allowed */
+        }
+        
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid #00ffe7;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 0 50px #00ffe7;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        h1 {
+            color: #00ffe7;
+            font-size: 32px;
+            text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px 20px;
+            border: 2px solid #00ffe7;
+            background: transparent;
+            color: #00ffe7;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px transparent;
+        }
+        
+        .btn:hover {
+            background: #00ffe7;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffe7;
+        }
+        
+        .btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1>💻 Spidey</h1>
+        <div class="subtitle">Welcome to the Spidey Pranks Apps And Social Tricks Toolkit</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="https://play.google.com/store/apps/details?id=me.nextplus.smsfreetext.phonecalls" class="btn">📞 Fake Number</a>
+        <a href="https://t.me/EMMYHENZTECHINFO/202" class="btn">🎥 Prank Netflix</a>
+        <a href="https://www.mediafire.com/file/4pq81bytjlu12fe/Fake_Payment_Screenshot.7z/file" class="btn">💳 Fake Payment Screenshot</a>
+        <a href="https://www.mediafire.com/file/lvyqt2m61r50axk/Prank_Fake_Screenshot.7z/file" class="btn">📸 Prank Fake Screenshot</a>
+        <a href="https://matiztechz.online//9989/video.mp4?hash=AgADaB" class="btn">🎬 Netflix Pranks</a>
+        <a href="https://www.mediafire.com/file/p2ni8tkwwsvsqmt/ScreenStream_v4.1.13.apk/file" class="btn">🖥️ Screen Stream APK</a>
+        <a href="https://t.me/weareunlimitedtech/67?single" class="btn">🎞️ Netflix Premium</a>
+        <a href="https://t.me/weareunlimitedtech/81" class="btn">🚀 Instagram Gain Followers</a>
+        <a href="https://t.me/weareunlimitedtech/114" class="btn">🎬 Prime Video Premium</a>
+        <a href="https://t.me/weareunlimitedtech/115" class="btn">📲 Fake Payment APK</a>
+        <a href="https://t.me/weareunlimitedtech/125" class="btn">🎞️ Netflix Premium Trick</a>
+        <a href="https://t.me/weareunlimitedtech/130" class="btn">🔥 Free Fire Max Injector</a>
+        <a href="https://t.me/weareunlimitedtech/133" class="btn">🚫 WhatsApp Ban/Unban APK</a>
+        <a href="https://t.me/weareunlimitedtech/134" class="btn">📡 Unlimited Data APK</a>
+        <a href="https://t.me/weareunlimitedtech/143?single" class="btn">🎨 Telegram Theme</a>
+        <a href="https://devuploads.com/1u9rxo49kxk7" class="btn">💰 Fake Jazz Cash</a>
+        <a href="https://www.mediafire.com/file/mp674dg7n6mgh2d/EasyPaisa_screenshot_real_signed.apk/file" class="btn">📱 Easypaisa Screenshot Real</a>
+        <a href="https://www.mediafire.com/file/yw2ntawjlt5uhtw/Easypaisa_Screenshot__1.0.apk/file" class="btn">🖼️ Fake Easypaisa Screenshot</a>
+        <a href="https://www.mediafire.com/file/bzhfr3a3ckb2hyh/EasyPaisa_Animation.apk/file" class="btn">📲 Easypaisa Animation</a>
+        <a href="https://www.mediafire.com/file/0fw2kik2ocm40u8/EasyPaisa_to_jazzcash_signed.apk/file" class="btn">💵 Easypaisa to Jazzcash</a>
+        <a href="https://www.mediafire.com/file/4r7hmincpq9uydf/1_Easypaisa_SS.apk/file" class="btn">📊 Easypaisa History</a>
+        <a href="https://www.mediafire.com/file/4eobtvyo8qqfcmy/EasyPaisa_to_All_bank.apk/file" class="btn">🏦 Easypaisa to All Bank</a>
+        <a href="https://www.mediafire.com/file/khupoqiy0762f7f/nayapay_to_easpaysa.apk/file" class="btn">🏦 Nayapay to Easypaisa</a>
+        <a href="https://www.mediafire.com/file/gxnd696kjnldn7n/Jazz_Cash_Screenshot_by_kinghats.apk/file" class="btn">📲 Fake Jazz Cash Screenshot</a>
+        <a href="https://www.mediafire.com/file/7koezrtx8zfm945/JazzCash_receipt__signed.apk/file" class="btn">🧾 Jazz Cash Animation</a>
+        <a href="https://www.mediafire.com/file/k4ghr6i3mws86f3/Prank_Payment_3.0%2540Clxzner.apk/file" class="btn">🇮🇳 Indian Prank APK</a>
+        <a href="https://www.mediafire.com/file/qa3rkg6rj9mqx4t/FamPay_7.1.apk/file" class="btn">💳 Fake Fampay Screenshot</a>
+        <a href="https://www.mediafire.com/file/933dczwxoc5mzq3/base.apk/file" class="btn">📲 Fake Paytm Screenshot</a>
+        <a href="https://www.mediafire.com/file/p69eqor11f1sfjo/GpaySpoof_%2540Yash.apk/file" class="btn">💵 Google Pay Screenshot</a>
+        <a href="https://www.mediafire.com/file/h9fonbmc5ugaf9i/base-1.apk/file" class="btn">📊 Fake Trading Screenshot</a>
+        <a href="https://www.mediafire.com/file/7nwqrvas6pbr9fz/Fake_Ids_maker%2528for_indians%2529.apk/file" class="btn">🇮🇳 Fake ID Maker India</a>
+        <a href="https://www.mediafire.com/file/c23bh1p5dr09ogi/Fake_Ids_maker%2528for_Pakistani%2529.apk/file" class="btn">🇵🇰 Fake ID Maker Pakistan</a>
+        <a href="https://www.mediafire.com/file/s0tjqme7rfptrrl/Create_Fake_Sms.apk/file" class="btn">💬 Fake Text Message</a>
+        <a href="https://www.mediafire.com/file/21jfv92gbdxrb16/UR_Telecom_1.0.apk/file" class="btn">☎️ UR Telecom</a>
+        <a href="https://www.mediafire.com/file/fh29ebna11n76ai/Umagic_1.6.0.apk/file" class="btn">✨ Umagic</a>
+        <a href="https://www.mediafire.com/file/kz675v9ikmn223v/PLAYit_2.7.15.3.apk/file" class="btn">🎞️ PLAYit Player</a>
+        <a href="https://www.mediafire.com/file/pnm5smil04lrm51/Fast_Call_1.5.2.apk/file" class="btn">📞 Fast Call</a>
+        <a href="https://www.mediafire.com/file/23v7ekzh45v5c1k/Easypaisa_Screenshot_1.0.apk/file" class="btn">💸 Fake Easypaisa</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            &copy; 2025 Spidey Toolkit - Powered by Nain 🔥
+        </div>
+    </div>
+
+    <!-- Background Animation Script -->
+    <script>
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const matrix = "01";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({
+            length: columns
+        }).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ffe7";
+            ctx.font = $ {
+                fontSize
+            }
+            px monospace;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrix[Math.floor(Math.random() * matrix.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>
